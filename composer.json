@@ -1,0 +1,21 @@
+{
+    "name": "vendor/project",
+    "description": "",
+    "authors": [
+        {
+            "name": "Your Name",
+            "email": "your@email.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/view": "4.0.*",
+        "snappy/app-support": "dev-master"
+    },
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    },
+    "minimum-stability": "dev"
+}
