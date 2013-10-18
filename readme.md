@@ -2,6 +2,12 @@
 
 Base application template for building Snappy applications.
 
+## What Are They
+
+Snappy applications are an easy way to integrate Snappy with all of your other favorite applications. For example, want a message to be sent to your Hipchat room when a new wall post is made? How about creating a new Highrise contact when you get an e-mail? Applications make either a breeze.
+
+You can even build your applications and have them included in Snappy. This repository contains a starting point for doing just that. Just adding a few API calls to a single file is all it takes to build a fully functional Snappy application! We'll walk you through the process below.
+
 ## Getting Started
 
 First, clone this repository onto your system using Git, then remove the `.git` folder from the cloned directory. Run the `composer install` command from your terminal to install the application's dependencies. This will give you a good starting point for building your application. Next, you should set values such as `name`, `author`, etc. in both the `composer.json` file and in the `Snappy\Apps\ServiceName\App.php` file.
