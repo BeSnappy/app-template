@@ -4,7 +4,7 @@ Base application template for building Snappy applications.
 
 ## Getting Started
 
-First, clone this repository onto your system using Git, then remove the `.git` folder from the cloned directory. This will give you a good starting point for building your application. Next, you should set values such as `name`, `author`, etc. in both the `composer.json` file and in the `Snappy\Apps\ServiceName\App.php` file.
+First, clone this repository onto your system using Git, then remove the `.git` folder from the cloned directory. Run the `composer install` command from your terminal to install the application's dependencies. This will give you a good starting point for building your application. Next, you should set values such as `name`, `author`, etc. in both the `composer.json` file and in the `Snappy\Apps\ServiceName\App.php` file.
 
 Next, you may rename the `ServiceName` folder to match the name of the application's purpose or integrated third party service. For example, the Github application has a folder path of `Snappy\Apps\Github\App.php`. Also, you should add a 256x256 logo for the app to the root folder. The file name should also be set in the `App.php` icon property.
 
