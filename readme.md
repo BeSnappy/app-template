@@ -4,9 +4,13 @@ Base application template for building Snappy applications.
 
 ## Getting Started
 
-First, set appropriate values for the public properties on the base `App` found in `/src/Snappy/Apps/ServiceName/App.php`. You may rename the `ServiceName` folder to match the name of the application's purpose or integrated third party service.
+First, clone this repository onto your system using Git, then remove the `.git` folder from the cloned directory. This will give you a good starting point for building your application. Next, you should set values such as `name`, `author`, etc. in both the `composer.json` file and in the `Snappy\Apps\ServiceName\App.php` file.
 
-Apps may "listen" for one or more of the following hooks: `message.incoming`, `message.outgoing`, `contact.created`, `tags.changed`, `ticket.replied`, and `ticket.waiting`. To indicate which events your application listens for you may implement the corresponding interfaces. The interfaces are:
+Next, you may rename the `ServiceName` folder to match the name of the application's purpose or integrated third party service. For example, the Github application has a folder path of `Snappy\Apps\Github\App.php`.
+
+## How Apps Work
+
+Apps may listen for one or more of the following hooks: `message.incoming`, `message.outgoing`, `contact.created`, `tags.changed`, `ticket.replied`, and `ticket.waiting`. To indicate which events your application handles, you may implement the corresponding interfaces. The interfaces are:
 
 - `Snappy\Apps\IncomingMessageHandler`
 - `Snappy\Apps\OutgoingMessageHandler`
@@ -15,4 +19,10 @@ Apps may "listen" for one or more of the following hooks: `message.incoming`, `m
 - `Snappy\Apps\TicketRepliedHandler`
 - `Snappy\Apps\TicketWaitingHandler`
 
-The [Guzzle](https://github.com/guzzle/guzzle) will be available, so feel free to use this HTTP library for contacting remote services.
+The [Guzzle](https://github.com/guzzle/guzzle) PHP library will be available to your application, so feel free to use this HTTP library for contacting remote services. You may wish to add it to your own application's Composer file for use during testing. If you add Guzzle to your composer file, use the `3.7.*` version.
+
+## Rendering Views
+
+For the applications that implement the `ContactLookupHandler` interface, you may render HTML "views" by using the `$this->render` method, passing the path to the view file, and an array of data you want to make available to the view:
+
+	$this->render(__DIR__.'/view.html', array('name' => $name, 'email' => $email));
