@@ -12,7 +12,7 @@ You can even build your applications and have them included in Snappy. This repo
 
 First, clone this repository onto your system using Git, then remove the `.git` folder from the cloned directory. Run the `composer install` command from your terminal to install the application's dependencies. This will give you a good starting point for building your application. Next, you should set values such as `name`, `author`, etc. in both the `composer.json` file and in the `Snappy\Apps\ServiceName\App.php` file.
 
-Next, you may rename the `ServiceName` folder to match the name of the application's purpose or integrated third party service. For example, the Github application has a folder path of `Snappy\Apps\Github\App.php`. Also, you should add a 256x256 logo for the app to the root folder. The file name should also be set in the `App.php` icon property.
+Next, you may rename the `ServiceName` folder to match the name of the application's purpose or integrated third party service. For example, the [Github application](https://github.com/BeSnappy/snappy-github) has a folder path of `Snappy\Apps\Github\App.php`. Also, you should add a 256x256 logo for the app to the root folder. The file name should also be set in the `App.php` icon property.
 
 ## How Apps Work
 
@@ -33,6 +33,8 @@ The [Guzzle](https://github.com/guzzle/guzzle) PHP library will be available to 
 The `ContactLookupHandler` is unique in that it does not correspond directly to a Snappy webhook. Instead, it may be used to add a custom display of contact information to the contact detail tool-tip.
 
 When clicking on a contact in the address bar of a Snappy message screen, a tool-tip with more information about that contact will appear. On the right side of this tool-tip will be the icons of your Contact Lookup enabled applications. Clicking one of these icons will display custom HTML returned by that application.
+
+For an example of a Snappy application that implements contact lookup, check out the [Highrise application](https://github.com/BeSnappy/snappy-highrise).
 
 ## Rendering Views
 
