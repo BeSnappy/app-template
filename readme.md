@@ -12,9 +12,6 @@ Next, you may rename the `ServiceName` folder to match the name of the applicati
 
 Apps may listen for one or more of the following hooks: `message.incoming`, `message.outgoing`, `contact.created`, `tags.changed`, `ticket.replied`, and `ticket.waiting`. To indicate which events your application handles, you may implement the corresponding interfaces. The interfaces are:
 
-Apps may "listen" for one or more of the following hooks: `message.incoming`, `message.outgoing`, `contact.created`, `tags.changed`, `ticket.replied`, and `ticket.waiting`. To indicate which events your application listens for you may implement the corresponding interfaces. The interfaces are:
->>>>>>> ed4dc909d53a1fe51d4f613d1755b0b488b0a4ba
-
 - `Snappy\Apps\IncomingMessageHandler`
 - `Snappy\Apps\OutgoingMessageHandler`
 - `Snappy\Apps\ContactCreatedHandler`
