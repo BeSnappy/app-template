@@ -15,11 +15,18 @@ Apps may listen for one or more of the following hooks: `message.incoming`, `mes
 - `Snappy\Apps\IncomingMessageHandler`
 - `Snappy\Apps\OutgoingMessageHandler`
 - `Snappy\Apps\ContactCreatedHandler`
+- `Snappy\Apps\ContactLookupHandler`
 - `Snappy\Apps\TagsChangedHandler`
 - `Snappy\Apps\TicketRepliedHandler`
 - `Snappy\Apps\TicketWaitingHandler`
 
 The [Guzzle](https://github.com/guzzle/guzzle) PHP library will be available to your application, so feel free to use this HTTP library for contacting remote services. You may wish to add it to your own application's Composer file for use during testing. If you add Guzzle to your composer file, use the `3.7.*` version.
+
+## Contact Lookup
+
+The `ContactLookupHandler` is unique in that it does not correspond directly to a Snappy webhook. Instead, it may be used to add a custom display of contact information to the contact detail tool-tip.
+
+When clicking on a contact in the address bar of a Snappy message screen, a tool-tip with more information about that contact will appear. On the right side of this tool-tip will be the icons of your Contact Lookup enabled applications. Clicking one of these icons will display custom HTML returned by that application.
 
 ## Rendering Views
 
