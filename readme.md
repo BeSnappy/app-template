@@ -33,3 +33,7 @@ When clicking on a contact in the address bar of a Snappy message screen, a tool
 For the applications that implement the `ContactLookupHandler` interface, you may render HTML "views" by using the `$this->render` method, passing the path to the view file, and an array of data you want to make available to the view:
 
 	$this->render(__DIR__.'/view.html', array('name' => $name, 'email' => $email));
+
+## Submitting Applications For Review
+
+So, you have completed your first application... great! Next, just send us an e-mail at hello@besnappy.com with a link to the repository. We'll check it out and get it included in Snappy ASAP.
