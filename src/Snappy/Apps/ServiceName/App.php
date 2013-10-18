@@ -19,6 +19,13 @@ class App extends BaseApp {
 	public $description = 'Application Description';
 
 	/**
+	 * Any notes about this application
+	 *
+	 * @var string
+	 */
+	public $notes = 'Application Notes';
+
+	/**
 	 * The application's icon filename.
 	 *
 	 * @var string
