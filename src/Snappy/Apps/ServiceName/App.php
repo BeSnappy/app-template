@@ -33,6 +33,13 @@ class App extends BaseApp {
 	public $icon = 'icon.png';
 
 	/**
+	 * The application service's website.
+	 *
+	 * @var string
+	 */
+	public $website;
+
+	/**
 	 * The application author name.
 	 *
 	 * @var string
