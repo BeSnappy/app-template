@@ -44,4 +44,8 @@ For the applications that implement the `ContactLookupHandler` interface, you ma
 
 ## Submitting Applications For Review
 
-So, you have completed your first application... great! Next, just send us an e-mail at hello@besnappy.com with a link to the repository. We'll check it out and get it included in Snappy ASAP.
+So, you have completed your first application... great!
+
+Next, submit your application to the [Packagist](https://packagist.org) PHP package repository. This will allow us to pull your application into our Snappy development environment.
+
+Finally, just send us an e-mail at hello@besnappy.com with a link to the repository. We'll check it out and get it included in Snappy ASAP.
