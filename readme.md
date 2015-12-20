@@ -48,4 +48,4 @@ So, you have completed your first application... great!
 
 Next, submit your application to the [Packagist](https://packagist.org) PHP package repository. This will allow us to pull your application into our Snappy development environment.
 
-Finally, just send us an e-mail at hello+github@besnappy.com with a link to the repository. We'll check it out and get it included in Snappy ASAP.
+Finally, just send us an e-mail at hello+github@help.besnappy.com with a link to the repository. We'll check it out and get it included in Snappy ASAP.
